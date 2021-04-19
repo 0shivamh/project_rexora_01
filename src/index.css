@@ -1,0 +1,42 @@
+body{
+    text-align: left;
+  }
+  
+  .btn-main:hover{
+    background-color: #02B290;
+    color: white;
+  }
+  .btn:focus{
+    box-shadow: none !important;
+  }
+  .cbtn{
+    margin: 15px 5px 15px 5px;
+    text-align: center;
+  }
+  .regi{
+    border-radius: 25px;
+    margin-left:400px;
+    margin-right:400px;
+  }
+  .form-text{
+    margin:5px;
+    text-decoration: none;
+    
+  }
+  #headtext{
+    text-align: center;
+  }
+  @media only screen and (max-width: 1200px) {
+    .regi{
+      margin-left:100px;
+      margin-right:100px;
+    }
+    
+  }
+  @media only screen and (max-width: 600px) {
+    .regi{
+      margin-left:20px;
+      margin-right:20px;
+    }
+    
+  }
