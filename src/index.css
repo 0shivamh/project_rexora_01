@@ -1,7 +1,5 @@
-body{
-    text-align: left;
-  }
-  
+
+
   .btn-main:hover{
     background-color: #02B290;
     color: white;
@@ -25,6 +23,23 @@ body{
   }
   #headtext{
     text-align: center;
+  }
+  .dash1{
+    text-align: center;
+  }  
+  .dash2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+  }
+  .dash3{
+    margin: 30px;
+  }
+  .ccard{
+      border-radius: 50px;
+      text-align: center;
+      color: white;
+      background-color:#DE4839;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   @media only screen and (max-width: 1200px) {
     .regi{
