@@ -4,6 +4,7 @@ import a from '../images/1.png'
 import b from '../images/2.png'
 import c from '../images/3.png'
 import d from '../images/4.png'
+import Projects from "./Projects";
 const Home = () => {
   return (
     <>
@@ -46,23 +47,24 @@ const Home = () => {
 
       <div className="container px-4">
         <div className="row gx-5 dash3">
-          <div className="col">
-          <div className="p-3 border ccard">Artificial Intelligence</div>
+          <div className="col ccard">
+          <div className="p-3 ">Artificial Intelligence</div>
           </div>
-          <div className="col">
-            <div className="p-3 border ccard">Machine Learning</div>
+          <div className="col ccard">
+            <div className="p-3 ">Machine Learning</div>
           </div>
-          <div className="col">
-            <div className="p-3 border ccard">Python</div>
+          <div className="col ccard">
+            <div className="p-3 ">Python</div>
           </div>
-          <div className="col">
-            <div className="p-3 border ccard">C/C++</div>
+          <div className="col ccard">
+            <div className="p-3 ">C/C++</div>
           </div>
         </div>
       </div>
 
+      <Projects/>
 
-
+      
 
     </>
   );
