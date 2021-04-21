@@ -6,32 +6,17 @@ import Home from "./Components/Home";
 import Login from "./Components/Login";
 import SignUp from "./Components/SignUp";
 import Reset from "./Components/Reset";
-import Nav from './Components/nav.component';
-
 import { AuthProvider } from "./Config/Auth";
 import PrivateRoute from "./Config/PrivateRoute";
-import Projects from "../src/Components/Projects";
-import Headpart from  "../src/Components/Headpart";
-import app from "../src/Config/base"; 
-import { useHistory } from "react-router-dom";
 import UHome from "../src/Components/uHome"
 
 const App = () => {
-
-  app.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      var btn2 = document.getElementById("UH");
-      btn2.remove();
-    } else {
-        
-    }
-    });
   
   return (
     <AuthProvider>
     <Router>
       <div>
-      <UHome id="UH" />
+      <UHome/>
         <PrivateRoute exact path="/" component={Home} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={SignUp} />
