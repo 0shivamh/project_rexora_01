@@ -11,21 +11,21 @@ export default class uHome extends Component{
     
 
     render(){
-        
-        function myFunction() {
-            // var x = document.getElementById("myDIV");
-            // if (x.style.display === "none") {
-            //   x.style.display = "block";
-            // } else {
-            //   x.style.display = "none";
-            // }
-            alert('hi')
-          }
+
+        app.auth().onAuthStateChanged(function(user) {
+            if (user) {
+              var btn2 = document.getElementById("idk");
+              btn2.remove();
+            } else {
+                
+            }
+            });
+          
 
         return(
             <div>
                     <Nav/>
-                <div id="tab">
+                    <div id="idk">
                         <div className="container px-4">
                             <Headpart/>
                         </div>

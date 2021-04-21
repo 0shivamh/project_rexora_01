@@ -49,17 +49,17 @@ const SignUp = ({ history }) => {
                 Sign Up
             </h3>
             {error && <Alert variant="danger">{error}</Alert>}
-            <div class="form-floating mb-3">
-              <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com"/>
-              <label for="floatingInput">Email address</label>
+            <div className="form-floating mb-3">
+              <input name="email" type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
+              <label htmlFor="floatingInput">Email address</label>
             </div>
-          <div class="form-floating mb-3">
-            <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password"  />
-            <label for="floatingPassword">Password</label>
+          <div className="form-floating mb-3">
+            <input name="password" type="password" className="form-control" id="floatingPassword" placeholder="Password"  />
+            <label htmlFor="floatingPassword">Password</label>
           </div>
-          <div class="form-floating">
-            <input name="password1" type="password" class="form-control" id="floatingPassword1" placeholder="Password"  />
-            <label for="floatingPassword1">Confirm Password</label>
+          <div className="form-floating">
+            <input name="password1" type="password" className="form-control" id="floatingPassword1" placeholder="Password"  />
+            <label htmlFor="floatingPassword1">Confirm Password</label>
           </div>
           <button type='submit' className="btn cbtn btn-primary ">Sign Up</button> 
           <button type='submit' className="btn cbtn btn-primary " onClick={GoogleL}>Sign Up With Google</button>
