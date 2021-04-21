@@ -9,8 +9,22 @@ import Reset from "./Components/Reset";
 import Nav from './Components/nav.component';
 import { AuthProvider } from "./Config/Auth";
 import PrivateRoute from "./Config/PrivateRoute";
+import Projects from "../src/Components/Projects";
+import Headpart from  "../src/Components/Headpart";
+import app from "../src/Config/base"; 
 
 const App = () => {
+
+  const Check=() =>{
+    app.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        alert("hi");
+      } else {
+        alert("hhhh");
+      }
+      });
+   }
+
   return (
     <AuthProvider>
     <Router>
