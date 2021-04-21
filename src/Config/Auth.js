@@ -15,7 +15,12 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   if(pending){
-    return <>Loading...</>
+    return <>
+    <div class="load">
+      <div class="loadingspinner"></div>
+      
+    </div>
+    </>
   }
 
   return (
