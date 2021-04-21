@@ -3,10 +3,26 @@ import { withRouter } from "react-router";
 import app from "../Config/base";
 import { Link } from "react-router-dom";
 import {  Alert } from "react-bootstrap"
+import {provider} from "../Config/base"
 
 const SignUp = ({ history }) => {
   
   const [error, setError] = useState("")
+  const [message, setMessage] = useState("")
+
+  let GoogleL=()=>{
+    app.auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    setMessage("Successfully Sign in")
+  }).catch((error) => {
+    setError('try again');
+  });
+    
+    
+
+  }
+
   const handleSignUp = useCallback(async event => {
     event.preventDefault();
     const { email, password,password1 } = event.target.elements;
@@ -46,6 +62,7 @@ const SignUp = ({ history }) => {
             <label for="floatingPassword1">Confirm Password</label>
           </div>
           <button type='submit' className="btn cbtn btn-primary ">Sign Up</button> 
+          <button type='submit' className="btn cbtn btn-primary " onClick={GoogleL}>Sign Up With Google</button>
 
            
       </form>

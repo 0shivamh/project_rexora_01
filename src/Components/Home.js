@@ -2,17 +2,16 @@ import React from "react";
 import app from "../Config/base";
 import Projects from "./Projects";
 import Headpart from "./Headpart";
-
+import Navbar from  "./navbar"
 const Home = () => {
-   const Check=() =>{
-    app.auth().onAuthStateChanged(function(user) {
-      if (user) {
-        alert("hi")
-      } else {
-        alert("hhhh")
-      }
-      });
-   }
+   
+
+  app.auth().onAuthStateChanged(function(user) {
+    if (user) {
+    } else {
+        
+    }
+    });
 
   return (
     <>
@@ -22,7 +21,7 @@ const Home = () => {
         <div className="row gx-5">
           <div className="col dash1">
             <p><i className="fa fa-user-circle" aria-hidden="true"></i></p>
-            <button className='btn btn1' onClick={() => app.auth().signOut()}>Sign out</button>
+            <button className='btn btn1' onClick={() => app.auth().signOut() }>Sign out</button>
           </div>
         </div>
 

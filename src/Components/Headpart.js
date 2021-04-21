@@ -8,6 +8,7 @@ import d from '../images/4.png'
 export default class Headpart extends Component{
     render(){
         return(
+            
             <div className="row gx-5">
             <div className="col dash2"  >
             <div id="slider" className="carousel slide" data-ride="carousel">

@@ -8,11 +8,13 @@ export default class Projects extends Component{
 
   
 render(){
+
+    
     return(
         <div>
 
         <div className='Projectdash container '>
-        <p className="h3">Top Projects</p>
+        <p className="h3">Top Projects  </p>
             <div className="slidecard card-body">
                 <div className="d-flex justify-content-center">
                 <img  className="circle img-fluid" src={p1} />
@@ -43,12 +45,12 @@ render(){
         </div>
 
        
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
         <p className="h3">Top Performer</p>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row gx-5">
-                        <div class="col">
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                    <div className="row gx-5">
+                        <div className="col">
                             <div className="profile card-body">
                             <div className="d-flex justify-content-center">
                             <img  className="pic img-fluid" src={man} />
@@ -57,7 +59,7 @@ render(){
                             <p className="card-text">Hello hi sjdkjdvnmm,asjyhbsdui </p>
                         </div>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <div className="profile card-body">
                             <div className="d-flex justify-content-center">
                             <img  className="pic img-fluid" src={man} />
@@ -66,7 +68,7 @@ render(){
                             <p className="card-text">Hello hi sjdkjdvnmm,asjyhbsdui </p>
                         </div>
                         </div>
-                        <div class="col">
+                        <div className="col">
                         <div className="profile card-body">
                             <div className="d-flex justify-content-center">
                             <img  className="pic img-fluid" src={man} />
@@ -79,9 +81,9 @@ render(){
                 
                     
                 </div>
-                <div class="carousel-item">
-                <div class="row gx-5">
-                        <div class="col">
+                <div className="carousel-item">
+                <div className="row gx-5">
+                        <div className="col">
                             <div className="profile card-body">
                             <div className="d-flex justify-content-center">
                             <img  className="pic img-fluid" src={man} />
@@ -90,7 +92,7 @@ render(){
                             <p className="card-text">Hello hi sjdkjdvnmm,asjyhbsdui </p>
                         </div>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <div className="profile card-body">
                             <div className="d-flex justify-content-center">
                             <img  className="pic img-fluid" src={man} />
@@ -99,7 +101,7 @@ render(){
                             <p className="card-text">Hello hi sjdkjdvnmm,asjyhbsdui </p>
                         </div>
                         </div>
-                        <div class="col">
+                        <div className="col">
                         <div className="profile card-body">
                             <div className="d-flex justify-content-center">
                             <img  className="pic img-fluid" src={man} />
@@ -110,9 +112,9 @@ render(){
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                <div class="row gx-5">
-                        <div class="col">
+                <div className="carousel-item">
+                <div className="row gx-5">
+                        <div className="col">
                             <div className="profile card-body">
                             <div className="d-flex justify-content-center">
                             <img  className="pic img-fluid" src={man} />
@@ -121,7 +123,7 @@ render(){
                             <p className="card-text">Hello hi sjdkjdvnmm,asjyhbsdui </p>
                         </div>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <div className="profile card-body">
                             <div className="d-flex justify-content-center">
                             <img  className="pic img-fluid" src={man} />
@@ -130,7 +132,7 @@ render(){
                             <p className="card-text">Hello hi sjdkjdvnmm,asjyhbsdui </p>
                         </div>
                         </div>
-                        <div class="col">
+                        <div className  ="col">
                         <div className="profile card-body">
                             <div className="d-flex justify-content-center">
                             <img  className="pic img-fluid" src={man} />
@@ -141,9 +143,9 @@ render(){
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                <div class="row gx-5">
-                        <div class="col">
+                <div className="carousel-item">
+                <div className="row gx-5">
+                        <div className="col">
                             <div className="profile card-body">
                             <div className="d-flex justify-content-center">
                             <img  className="pic img-fluid" src={man} />
@@ -152,7 +154,7 @@ render(){
                             <p className="card-text">Hello hi sjdkjdvnmm,asjyhbsdui </p>
                         </div>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <div className="profile card-body">
                             <div className="d-flex justify-content-center">
                             <img  className="pic img-fluid" src={man} />
@@ -161,7 +163,7 @@ render(){
                             <p className="card-text">Hello hi sjdkjdvnmm,asjyhbsdui </p>
                         </div>
                         </div>
-                        <div class="col">
+                        <div className="col">
                         <div className="profile card-body">
                             <div className="d-flex justify-content-center">
                             <img  className="pic img-fluid" src={man} />
@@ -173,13 +175,13 @@ render(){
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+            <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+            <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
             </a>
         </div>
 

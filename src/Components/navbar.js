@@ -1,26 +1,13 @@
 import { Component } from "react"
 import { Link } from "react-router-dom"
 import * as React from 'react';
+
 import app from "../Config/base";
-export default class Nav extends Component{
+export default class Navbar extends Component{
   
 
     render(){
-        app.auth().onAuthStateChanged(function(user) {
-          if (user) {
-            var btn2 = document.getElementById("sbtn");
-            btn2.remove();
-            // window.location.reload();
 
-          } else {
-            
-            var btn1 = document.getElementById("outbtn");
-            btn1.remove();
-            // window.location.reload()
-          }
-          });
-        
-    
         return(
             <nav className="navbar navbar-expand-lg navbar-light shadow p-3 mb-5 bg-white rounded sticky-top">
             {/* <a className="navbar-brand" href="#">Navbar</a> */}
@@ -38,12 +25,9 @@ export default class Nav extends Component{
               </li>    
             </ul>
             <form className="ml-auto">
-            <Link className="btn btn-main" id="lbtn" to={'/Login'} role="button">Login</Link> 
+            <button className="btn btn-main" id="lbtn" onClick={() => app.auth().signOut()} role="button">Log Out</button> 
 
-            <Link className="btn btn-main" id='sbtn' to={'/SignUp'} role="button">Sign Up</Link>
-
-            <button className='btn btn1 ' id="outbtn" onClick={() => app.auth().signOut() }>Sign out</button>
-            </form>
+          </form>
             
           </div>
         </nav>
