@@ -8,8 +8,8 @@ import d from '../images/4.png'
 export default class Headpart extends Component{
     render(){
         return(
-            
-            <div className="row gx-5">
+            <div className="mainhead">
+            <div className="row gx-5 ">
             <div className="col dash2"  >
             <div id="slider" className="carousel slide" data-ride="carousel">
               <div className="carousel-inner">
@@ -36,6 +36,7 @@ export default class Headpart extends Component{
          
 
         <div className="row gx-5 dash3">
+        <p className="h3 text-center">Tech Used</p>
         <div className="col ccard">
         <div className="p-3 ">Artificial Intelligence</div>
         </div>
@@ -51,7 +52,7 @@ export default class Headpart extends Component{
         </div>
         </div>
 
-
+</div>
         )
     }
 }

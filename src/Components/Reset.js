@@ -3,7 +3,7 @@ import {  Alert } from "react-bootstrap"
 // import {useAuth}  from "../Config/Auth"
 import { Link } from "react-router-dom"
 import app from '../Config/base';
-
+import $ from 'jquery';
 export default function Reset() {
   const [error, setError] = useState("")
   const [message, setMessage] = useState("")
@@ -24,10 +24,23 @@ export default function Reset() {
     document.getElementById("form1").reset();
   }
 
-
+  $(document).ready(function(){
+    $("#resetnav").modal('show');
+  });
   return (
     <div>
-          <form  className="regi shadow-lg p-4 mb-5 bg-white" id='form1' onSubmit={handleSubmit}>
+          
+
+      <div className="modal fade" id="resetnav" tabindex="-1" aria-hidden="true">
+      <div className="modal-dialog">
+      <div className="modal-content">
+      <div className="modal-header">
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className="modal-body">
+      <form  className="shadow-lg p-4 mb-5 bg-white" id='form1' onSubmit={handleSubmit}>
       <h3 id='headtext'>
                 Forgot password?
             </h3>
@@ -42,10 +55,16 @@ export default function Reset() {
           <div className="w-100 text-center mt-3">
             <Link to="/login">Login</Link>
           </div>
-          </form>
-       <div className="w-100 text-center mt-2">
+          <div className="w-100 text-center mt-2">
         Need an account? <Link to="/signup">Sign Up</Link>
       </div>
+          </form>
+
+      </div>
+      </div>
+      </div>
+      </div>
+      
     </div>
   )
 }

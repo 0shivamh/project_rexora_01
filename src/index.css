@@ -35,11 +35,6 @@
     margin: 15px 5px 15px 5px;
     text-align: center;
   }
-  .regi{
-    border-radius: 25px;
-    margin-left:400px;
-    margin-right:400px;
-  }
   .form-text{
     margin:5px;
     text-decoration: none;
@@ -50,10 +45,12 @@
   }
   .dash1{
     text-align: center;
+    
   }  
   .dash2{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 25px;
+    
   }
   .dash3{
     margin: 30px;
@@ -65,7 +62,7 @@
     text-align: center;
     color: white;
     margin: 10px;
-    background-color:#DE4839;
+    background-color:#38CC77;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .ccard:hover{
@@ -77,7 +74,9 @@
 
   
   }
-  
+  .mainhead{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3cpath d='M838.9569706426528 158.82099214062578L798.2223266701078 6.797231206858783 646.1985657363408 47.531875179403755 686.9332097088858 199.55563611317075z' fill='rgba(75%2c 87%2c 92%2c 0.73)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M189.19285681615773 536.9419633992209L239.9369706203265 452.48957594488303 87.88633253673545 418.5995989657988z' fill='rgba(75%2c 87%2c 92%2c 0.73)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1148.7318622925354 432.1380960582129L1218.384099606126 568.8383087418035 1355.0843122897165 499.186071428213 1285.432074976126 362.48585874462236z' fill='rgba(75%2c 87%2c 92%2c 0.73)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M531.4692515600415 45.64525798821534L432.07479195429164 40.43621508724007 426.86574905331634 139.83067469298993 526.2602086590662 145.0397175939652z' fill='rgba(75%2c 87%2c 92%2c 0.73)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M571.819%2c431.12C612.28%2c428.906%2c645.597%2c401.361%2c664.255%2c365.39C681.423%2c332.291%2c678.885%2c293.262%2c660.002%2c261.11C641.377%2c229.398%2c608.522%2c210.336%2c571.819%2c208.004C530.026%2c205.349%2c484.972%2c213.619%2c461.827%2c248.518C436.54%2c286.646%2c436.422%2c337.374%2c460.029%2c376.564C482.96%2c414.632%2c527.444%2c433.548%2c571.819%2c431.12' fill='rgba(75%2c 87%2c 92%2c 0.73)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M427.6660295239251 147.7705296581423L344.90093919179037 219.71712503802897 416.8475345716771 302.48221537016366 499.61262490381176 230.53561999027698z' fill='rgba(75%2c 87%2c 92%2c 0.73)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M159.6484994099905 76.64964731044196L90.27230113484465 151.04651156117674 164.66916538557945 220.42270983632258 234.0453636607253 146.02584558558783z' fill='rgba(75%2c 87%2c 92%2c 0.73)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1042.0316627896573 396.7140243217783L1042.0316627896573 557.0802016285264 1202.3978400964054 557.0802016285263 1202.3978400964054 396.71402432177825z' fill='rgba(75%2c 87%2c 92%2c 0.73)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M901.9511109005573 231.08983855318792L870.1554088217734 143.73186505602305 755.0162996154181 235.10440492278119z' fill='rgba(75%2c 87%2c 92%2c 0.73)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  }
   .Projectdash{
     text-align: center;
     margin: 50px;
@@ -118,6 +117,12 @@
     
     transform: scale(1.1);
     box-shadow: 0 6px 12px 0 rgba(33, 63, 233, 0.2), 0 8px 22px 0 rgba(115, 12, 175, 0.19);
+}
+.modal-content{
+  margin-top: 80px;
+}
+.hidebtn{
+  display: none;
 }
   @media only screen and (max-width: 1200px) {
     .regi{

@@ -31,7 +31,7 @@ render(){
                 </div>
                 <h5 className="card-title text-center">IOT Based Smart Parking System</h5>
                 <p className="card-text">The proposed system is used to indicate the user about the vacancy of the parking slots. </p>
-                <a href="#" className="btn btn-primary">Buy</a>
+                <Link to="/login" className="btn btn-primary">View</Link>
             </div>
 
             <div className="slidecard card-body">
@@ -40,7 +40,7 @@ render(){
                 </div>
                 <h5 className="card-title text-center">Virtual Assistant Using Python</h5>
                 <p className="card-text">Virtual desktop assistant is an awesome thing. If you want your machine to run on your command like Jarvis did for Tony</p>
-                <a href="#" className="btn btn-primary">Buy</a>
+                <Link to="/login" className="btn btn-primary">View</Link>
             </div>
    
         </div>
@@ -56,8 +56,8 @@ render(){
                             <div className="d-flex justify-content-center">
                             <img  className="pic img-fluid" src={man} />
                             </div>
-                            <h5 className="card-title text-center">Name</h5>
-                            <p className="card-text">Hello hi sjdkjdvnmm,asjyhbsdui </p>
+                            <h5 className="card-title text-center">Shivam</h5>
+                            <p className="card-text">I write code</p>
                         </div>
                         </div>
                         <div className="col">

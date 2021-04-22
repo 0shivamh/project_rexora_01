@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 import {  Alert } from "react-bootstrap"
 import { AuthContext } from "../Config/Auth";
 import {provider} from "../Config/base"
+import $ from "jquery";
 const Login = ({ history }) => {
-  
+
+     
 
   const [error, setError] = useState("")
   const [message, setMessage] = useState("")
@@ -49,11 +51,24 @@ const Login = ({ history }) => {
     return <Redirect to="/" />;
   }
 
-  
+  $(document).ready(function(){
+    $("#loginnav").modal('show');
+  });
 
   return (
-    <div>
-      <form  className="regi shadow-lg p-4 mb-5 bg-white" id="form1" onSubmit={handleLogin}>
+    <div id="LOG">
+     
+
+      <div className="modal fade" id="loginnav" tabIndex="-1" aria-hidden="true">
+      <div className="modal-dialog">
+      <div className="modal-content">
+      <div className="modal-header">
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className="modal-body">
+      <form  className="shadow-lg p-4 mb-5 bg-white" id="form1" onSubmit={handleLogin}>
       <h3 id='headtext'>
                 Log in
             </h3>
@@ -75,6 +90,10 @@ const Login = ({ history }) => {
           <div id="emailHelp" className="form-text"><Link to={'/Reset'} >Reset Password</Link></div> 
 
       </form>
+      </div>
+    </div>
+  </div>
+</div>
       
     </div>
   );
