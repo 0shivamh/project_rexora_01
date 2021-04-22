@@ -2,12 +2,12 @@ import React from "react";
 import app from "../Config/base";
 import Projects from "./Projects";
 import Headpart from "./Headpart";
-import Navbar from  "./navbar"
 const Home = () => {
    
 
   app.auth().onAuthStateChanged(function(user) {
     if (user) {
+      
     } else {
         
     }
