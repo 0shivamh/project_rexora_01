@@ -8,7 +8,7 @@ import {provider} from "../Config/base"
 import $ from "jquery";
 const Login = ({ history }) => {
 
-     
+ 
 
   const [error, setError] = useState("")
   const [message, setMessage] = useState("")
@@ -36,6 +36,7 @@ const Login = ({ history }) => {
           .signInWithEmailAndPassword(email.value, password.value);
         history.push("/");
         document.getElementById("form1").reset();
+        
 
       } catch (error) {
         setError('Please enter valid details');
@@ -54,6 +55,7 @@ const Login = ({ history }) => {
   $(document).ready(function(){
     $("#loginnav").modal('show');
   });
+  
 
   return (
     <div id="LOG">
@@ -63,7 +65,7 @@ const Login = ({ history }) => {
       <div className="modal-dialog">
       <div className="modal-content">
       <div className="modal-header">
-        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" id="close" className="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -83,17 +85,17 @@ const Login = ({ history }) => {
             <input name="password" type="password" className="form-control" id="floatingPassword" placeholder="Password"/>
             <label htmlFor="floatingPassword">Password</label>
           </div>
-          <button type='submit' className="btn cbtn btn-primary ">Login</button>
+          <button type='submit' className="btn cbtn btn-primary">Login</button>
 
           <button type='submit' className="btn cbtn btn-primary " onClick={GoogleL}>Login With Google</button>
            
           <div id="emailHelp" className="form-text"><Link to={'/Reset'} >Reset Password</Link></div> 
-
       </form>
       </div>
     </div>
   </div>
 </div>
+
       
     </div>
   );
