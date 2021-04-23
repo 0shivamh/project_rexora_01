@@ -29,7 +29,7 @@ const SignUp = ({ history }) => {
   const handleSignUp = useCallback(async event => {
     event.preventDefault();
     const { email, password,password1 } = event.target.elements;
-    if (password==password1){
+   
     try {
       
 
@@ -39,13 +39,8 @@ const SignUp = ({ history }) => {
       history.push("/");
     } catch (error) {
       setError("Something Wrong");
-    }}
-    else{
-      setError("password does not match");
-    document.getElementById("form1").reset();}
+    }
   }, [history]);
-
-
   $(document).ready(function(){
     $("#Signupnav").modal('show');
   });
@@ -54,11 +49,11 @@ const SignUp = ({ history }) => {
     <div>
         
 
-      <div className="modal fade" id="Signupnav" tabindex="-1"  aria-hidden="true">
+      <div className="modal fade" id="Signupnav" tabIndex="-1"  aria-hidden="true">
         <div className="modal-dialog">
           <div className="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div className="modal-header">
+              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
@@ -73,13 +68,13 @@ const SignUp = ({ history }) => {
                     <label htmlFor="floatingInput">Email address</label>
                   </div>
                 <div className="form-floating mb-3">
-                  <input name="password" type="password" className="form-control" id="floatingPassword" placeholder="Password"  />
+                  <input name="password" type="password" id="psw1" className="form-control" id="floatingPassword" placeholder="Password"  />
                   <label htmlFor="floatingPassword">Password</label>
                 </div>
-                <div className="form-floating">
-                  <input name="password1" type="password" className="form-control" id="floatingPassword1" placeholder="Password"  />
+                {/* <div className="form-floating">
+                  <input name="password1" type="password" id="psw2" className="form-control" id="floatingPassword1" placeholder="Password" />
                   <label htmlFor="floatingPassword1">Confirm Password</label>
-                </div>
+                </div> */}
                 <button type='submit' className="btn cbtn btn-primary ">Sign Up</button> 
                 <button type='submit' className="btn cbtn btn-primary " onClick={GoogleL}>Sign Up With Google</button>    
             </form>

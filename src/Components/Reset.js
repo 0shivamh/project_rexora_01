@@ -31,7 +31,7 @@ export default function Reset() {
     <div>
           
 
-      <div className="modal fade" id="resetnav" tabindex="-1" aria-hidden="true">
+      <div className="modal fade" id="resetnav" tabIndex="-1" aria-hidden="true">
       <div className="modal-dialog">
       <div className="modal-content">
       <div className="modal-header">
