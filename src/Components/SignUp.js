@@ -28,8 +28,8 @@ const SignUp = ({ history }) => {
 
   const handleSignUp = useCallback(async event => {
     event.preventDefault();
-    const { email, password,password1 } = event.target.elements;
-    if (password==password1){
+    const { email, password, } = event.target.elements;
+  
     try {
       
 
@@ -39,10 +39,10 @@ const SignUp = ({ history }) => {
       history.push("/");
     } catch (error) {
       setError("Something Wrong");
-    }}
-    else{
-      setError("password does not match");
-    document.getElementById("form1").reset();}
+      document.getElementById("form1").reset();
+    }
+     
+     
   }, [history]);
 
 
@@ -75,10 +75,6 @@ const SignUp = ({ history }) => {
                 <div className="form-floating mb-3">
                   <input name="password" type="password" className="form-control" id="floatingPassword" placeholder="Password"  />
                   <label htmlFor="floatingPassword">Password</label>
-                </div>
-                <div className="form-floating">
-                  <input name="password1" type="password" className="form-control" id="floatingPassword1" placeholder="Password"  />
-                  <label htmlFor="floatingPassword1">Confirm Password</label>
                 </div>
                 <button type='submit' className="btn cbtn btn-primary ">Sign Up</button> 
                 <button type='submit' className="btn cbtn btn-primary " onClick={GoogleL}>Sign Up With Google</button>    
