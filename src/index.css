@@ -17,7 +17,9 @@
 	border-radius: 50%;
 	animation: loadingspin 1s linear infinite;
 }
-
+.Pofile{
+  font-size: 28px;
+}
 @keyframes loadingspin {
 	100% {
 			transform: rotate(360deg)

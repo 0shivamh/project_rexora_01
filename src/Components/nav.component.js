@@ -15,7 +15,9 @@ export default class Nav extends Component{
           } else {
             
             var btn1 = document.getElementById("outbtn");
+            var btn3 = document.getElementById("pr");
             btn1.remove();
+            btn3.remove();
             // window.location.reload()
           }
           });
@@ -42,6 +44,9 @@ export default class Nav extends Component{
             <Link className="btn btn-main" id='sbtn' to={'/SignUp'} role="button"  >Sign Up</Link>
 
             <button className='btn btn1 ' id="outbtn" onClick={() => app.auth().signOut() }>Sign out</button>
+
+
+            <a><i className="fa fa-user-circle Pofile"  id="pr" data-toggle="modal" data-target="#PROFILE" aria-hidden="true"></i></a>
             </form>
             
           </div>
